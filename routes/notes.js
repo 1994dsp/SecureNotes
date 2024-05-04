@@ -4,6 +4,7 @@ const router = express.Router();
 const Note = require('../models/note');
 const User = require('../models/user');
 
+
 // Get all notes
 router.get('/notes', async (req, res) => {
   try {
@@ -29,5 +30,7 @@ router.get('/notes/search', async (req, res) => {
     res.render('error', { error: 'Error searching notes' });
   }
 });
+
+
 
 module.exports = router;

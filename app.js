@@ -82,8 +82,8 @@ const PORT = process.env.PORT || 3000;
 
 // HTTPS configuration
 const options = {
-  key: fs.readFileSync('/Users/apple/Documents/Secure Web Development/node-express-mongodb-crud/server.key'),
-  cert: fs.readFileSync('/Users/apple/Documents/Secure Web Development/node-express-mongodb-crud/server.cert')
+  key: fs.readFileSync('/Users/apple/Documents/Secure Web Development/node-express-mongodb-crud/SecureNotes/server.key'),
+  cert: fs.readFileSync('/Users/apple/Documents/Secure Web Development/node-express-mongodb-crud/SecureNotes/server.cert')
 };
 
 https.createServer(options, app).listen(PORT, () => {
